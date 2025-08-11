@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop Acc Game — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">GameAcc Shop</a>
+      <nav class="nav">
+        <a href="#products">Sản phẩm</a>
+        <a href="#about">Giới thiệu</a>
+        <button id="btn-login" class="btn small">Đăng nhập</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>Mua account game nhanh — an toàn</h1>
+        <p>Danh sách acc gốc, giao nhanh, hỗ trợ đổi mật khẩu. Demo front-end để bạn test.</p>
+        <a href="#products" class="btn">Xem sản phẩm</a>
+      </div>
+      <img src="https://via.placeholder.com/420x280?text=Game+Art" alt="game art" />
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="products" class="products">
+      <h2>Sản phẩm nổi bật</h2>
+      <div class="grid" id="product-grid">
+        <!-- cards sẽ được render bằng JS -->
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Về chúng tôi</h2>
+      <p>Shop demo: chỉ phục vụ mục đích test giao diện. Muốn thanh toán thật, mình sẽ hướng dẫn tích hợp Stripe / VNPay.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> GameAcc Shop — Demo</p>
+    </div>
+  </footer>
+
+  <!-- Modal mua -->
+  <div id="buyModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+      <h3 id="modal-title">Mua sản phẩm</h3>
+      <p id="modal-desc"></p>
+
+      <label>
+        Tên người mua
+        <input id="buyerName" placeholder="Tên của bạn" />
+      </label>
+
+      <button id="confirmBuy" class="btn">Xác nhận mua (demo)</button>
+      <p class="muted">Lưu ý: đây là demo front-end, giao dịch không thực hiện thanh toán.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
